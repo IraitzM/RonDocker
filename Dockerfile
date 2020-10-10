@@ -2,7 +2,7 @@
 FROM rstudio/plumber
 
 # Copy application files
-COPY . /app/
+COPY src /app/src
 
 # Expose app port
 EXPOSE 8000

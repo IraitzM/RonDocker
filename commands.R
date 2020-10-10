@@ -1,5 +1,8 @@
 # Docker
 
+# Getting base image
+system("docker pull rstudio/plumber")
+
 # Building the docker image
 system("docker build -t fizzbuzz:1.0 .")
 
@@ -7,7 +10,7 @@ system("docker build -t fizzbuzz:1.0 .")
 system("docker images")
 
 # Running an image
-system("docker run -p 8000:8000 --name myapp -d fizzbuzz")
+system("docker run -p 8000:8000 --name myapp -d fizzbuzz:1.0")
 
 # See containers running
 system("docker ps")
